@@ -1,0 +1,64 @@
+[TOC]
+
+# JDBC
+
+- JDBC中的各个类和接口
+- java database connectivity，java的数据库连接
+- 用一套Java代码操作所有关系型的数据库
+- JDBC：定义了一套操作所有关系型数据库的规则（接口）
+- 数据库驱动
+- 真正执行的代码是驱动jar包中的实现类
+- ![image-20210203022916841](JDBC.assets/image-20210203022916841.png)
+- 详解各个对象
+  - ![image-20210203145620586](JDBC.assets/image-20210203145620586.png)
+  - ![image-20210204082335529](JDBC.assets/image-20210204082335529.png)
+  - ![image-20210204082359746](JDBC.assets/image-20210204082359746.png)
+  - ![image-20210204082441634](JDBC.assets/image-20210204082441634.png)
+  - ![image-20210204082602306](JDBC.assets/image-20210204082602306.png)
+  - ![image-20210204082730723](JDBC.assets/image-20210204082730723.png)
+  - ![image-20210204082830928](JDBC.assets/image-20210204082830928.png)
+  - ![image-20210204082924977](JDBC.assets/image-20210204082924977.png)
+  - ![image-20210204083056230](JDBC.assets/image-20210204083056230.png)
+  - ![image-20210204083129312](JDBC.assets/image-20210204083129312.png)
+  - ![image-20210204083146803](JDBC.assets/image-20210204083146803.png)
+  - ![image-20210204083404932](JDBC.assets/image-20210204083404932.png)
+  - ![image-20210204083529336](JDBC.assets/image-20210204083529336.png)
+  - ![image-20210204083558930](JDBC.assets/image-20210204083558930.png)
+  - ![image-20210204083615045](JDBC.assets/image-20210204083615045.png)
+  - ![image-20210204083943915](JDBC.assets/image-20210204083943915.png)
+  - 配置文件
+  - ![image-20210204084021515](JDBC.assets/image-20210204084021515.png)
+  - ![image-20210204084344398](JDBC.assets/image-20210204084344398.png)
+  - ![image-20210204084515482](JDBC.assets/image-20210204084515482.png)
+  - ![image-20210204084755939](JDBC.assets/image-20210204084755939.png)
+  - ![image-20210204084817553](JDBC.assets/image-20210204084817553.png)
+  - ![image-20210204084826123](JDBC.assets/image-20210204084826123.png)
+  - ![image-20210204084952709](JDBC.assets/image-20210204084952709.png)
+  - ![image-20210204085150723](JDBC.assets/image-20210204085150723.png)
+  - ![image-20210204085305449](JDBC.assets/image-20210204085305449.png)
+- JDBC控制事务
+  - ![image-20210204085352616](JDBC.assets/image-20210204085352616.png)
+  - ![image-20210204124432423](JDBC.assets/image-20210204124432423.png)
+  - ![image-20210204124517195](JDBC.assets/image-20210204124517195.png)
+  - ![image-20210204124553861](JDBC.assets/image-20210204124553861.png)
+  - ![image-20210204124650717](JDBC.assets/image-20210204124650717.png)
+  - ![image-20210204124702766](JDBC.assets/image-20210204124702766.png)
+  - ![image-20210204124747563](JDBC.assets/image-20210204124747563.png)
+- 数据库连接池
+  - Spring  JDBC： JDBC Template
+  - 其实一个容器（集合），存放数据库连接的容器。
+    - 当系统初始化好后，容器被创建，容器中会申请一些连接对象，当用户来访问数据库时，从容器中获取连接对象，用完，再返还给连接池。
+    - interface DataSource
+    - C3P0连接池（旧）
+    - ![image-20210204125229691](JDBC.assets/image-20210204125229691.png)
+    - ![image-20210204125346250](JDBC.assets/image-20210204125346250.png)
+    - ![image-20210204130644147](JDBC.assets/image-20210204130644147.png)
+    - ![image-20210204132922895](JDBC.assets/image-20210204132922895.png)
+    - Druid：数据库连接池实现技术，由阿里巴巴提供（新，高效）
+    - ![image-20210204134601239](JDBC.assets/image-20210204134601239.png)
+    - ![image-20210204134743586](JDBC.assets/image-20210204134743586.png)
+  - Spring  JDBC：是Spring框架对JDBC的简单封装,提供了一个JDBCTemplate对象简化JDBC开发
+    - 调用JDBCTemplate的方法完成CRUD的操作
+    - ![image-20210204144049767](JDBC.assets/image-20210204144049767.png)
+    - 
+
